@@ -1,10 +1,13 @@
 import random
+import colorama
+
+from colorama import Fore, Style, Back
 
 print("Let's Play" + ' "Guess The Number" Game :)')
 
 computer_choose = random.randint(1, 10)
 
-player_choose = int(input("Pick a number between [1] and [10] "))
+player_choose = int(input(Fore.GREEN + "Pick a number between [1] and [10] "))
 player_moves_cnt = 5
 player_choose_cnt = 0
 
